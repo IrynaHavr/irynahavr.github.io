@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="main">
+        <form id="form">
+          <div class="insert-date">
+            <div class="insert-box">
+              <label for="inputDay" class="title">Day</label>
+              <input
+                type="text"
+                name="day"
+                id="inputDay"
+                class="input-text"
+                placeholder="DD"
+              />
+              <div class="text-error" id="dayError"></div>
+            </div>
+            <div class="insert-box">
+              <label for="inputMonth" class="title">MONTH</label>
+              <input
+                type="text"
+                name="month"
+                id="inputMonth"
+                class="input-text"
+                placeholder="MM"
+              />
+              <div class="text-error" id="monthError"></div>
+            </div>
+            <div class="insert-box">
+              <label class="title">Year</label>
+              <input
+                type="text"
+                name="year"
+                id="inputYear"
+                class="input-text"
+                placeholder="YYYY"
+              />
+              <div class="text-error" id="yearError"></div>
+            </div>
+          </div>
+
+          <div class="line-circle">
+            <div class="line"></div>
+            <button type="submit" class="button-circle">
+              <img src="./img/ikonka-white.svg" alt="" />
+            </button>
+          </div>
+        </form>
+
+        <div class="result">
+          <div class="result-box">
+            <div class="result-number" id="rYear">--</div>
+            <div class="result-word">years</div>
+          </div>
+          <div class="result-box">
+            <div class="result-number" id="rMonth">--</div>
+            <div class="result-word">months</div>
+          </div>
+          <div class="result-box">
+            <div class="result-number" id="rDay">--</div>
+            <div class="result-word">days</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
